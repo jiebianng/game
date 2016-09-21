@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        *{margin: 0}
+    </style>
+    <!--开始游戏的界面样式-->
+    <link rel="stylesheet" href="css/bei.css" type="text/css"/>
+    <!--玩游戏时的界面-->
+    <link rel="stylesheet" href="css/box.css" type="text/css"/>
+    <!--游戏结束时的界面-->
+    <link rel="stylesheet" href="css/rank.css" type="text/css"/>
+</head>
+<body>
+<!--开始游戏时的界面-->
+<div class="bei show" id="bei">
+    <div class="fist">
+        <img src="./images/IMG_2520.JPG"  width="720"  height="90" lt=""/>
+    </div>
+    <div class="two">
+        <MARQUEE  onMouseOut="this.start()"
+                  scrollAmount=6 scrollDelay=0 direction=left width=800 height=145
+                  align="center">
+            <DIV class="zi_you">
+                <img src="./images/IMG_2521.JPG"height="130" alt=""/>
+                <img src="./images/IMG_2522.JPG" height="130"alt=""/>
+                <img src="./images/IMG_2523.JPG" height="130"alt=""/>
+                <img src="./images/IMG_2524.JPG" height="130"alt=""/>
+            </DIV>
+        </MARQUEE>
+    </div>
+    <audio src="audio/di.mp3" id="audio" autoplay="autoplay"  playcount="100" ></audio>
+    <div class="three">
+        <!--<canvas id="three_img" width="200px"height="155px"></canvas>-->
+        <img src="images/IMG_2527.JPG" width="200px"height="155px"alt=""/>
+        <p class="ico">&#x0021;</p>
+        <p class="wenzi">G O U T W</p>
+    </div>
+</div>
+<!--游戏时的界面-->
+<div class="box" id="box">
+    <canvas class="main" width="800" height="480"></canvas>
+    <div class="">
+        <span class="span1"></span><span class="span2"></span><span class="span3"></span><span class="span4"></span><span class="span5"></span>
+    </div>
+    <canvas class="hider" width="160" height="160"></canvas>
+    <img src="images/boy.png" alt="" class="boy"/>
+    <canvas width="18" height="12" class="bullet"></canvas>
+    <p><span class="suspend">&#x00e0;</span><span class="score">0</span></p>
+    <!--//暂停-->
+    <ul class="suspend-ul" id="suspend-ul">
+        <li><img width="120" src="images/ff.gif" alt=""/></li><li><img src="images/zp1.gif"  width="120" alt=""/></li><li><img src="images/zp3.gif"  width="120" alt=""/></li>
+    </ul>
+
+</div>
+<!--游戏结束界面，分数统计排名-->
+<div class="rank" id="rank">
+    <div class="left_mck">
+        <div class="table_uc">
+            <ul class="taitou1" id="ico1_01">
+                <li class="ico1" >&#x007a;</li>
+                <li class="ico1" >&#x01a2;</li>
+                <li class="ico1" >&#x013e;</li>
+            </ul>
+            <!--排分页面-->
+            <div id="taitou3_ok">
+                <ul class="taitou3_we">
+                    <li>ranking</li>
+                    <li>name</li>
+                    <li>score</li>
+                </ul>
+                <ul class="taitou3" id="taitou3">
+                    <!--<li class="color_01">01</li>-->
+                    <!--<li class="color_02">hsdhs</li>-->
+                    <!--<li class="color_03">1234222</li>-->
+                </ul>
+            </div>
+            <!--商店页面-->
+            <div id="taitou4_ok">
+                <ul class="taitou4_we">
+                    <li>序号</li>
+                    <li>准备</li>
+                    <li>金币</li>
+                </ul>
+                <ul class="taitou4">
+                    <li class="color_04">01</li>
+                    <li>冲刺</li>
+                    <li class="color_05">1500</li>
+                </ul>
+            </div>
+            <!--仓库-->
+            <div id="taitou5_ok">
+                <ul class="taitou5_we">
+                    <li>序号</li>
+                    <li>装备</li>
+                    <li>数量</li>
+                </ul>
+                <ul class="taitou5">
+                    <li class="color_06">01</li>
+                    <li>防护罩</li>
+                    <li class="color_07">12</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right_temp">
+        <div class="top_01">
+            <div id="score_1">
+                <div id="logo">
+                    <img src="./images/zp6.gif"class="tu_02"width="380"height="75" alt=""/>
+                </div>
+            </div>
+            <div id="score_2">
+                <ul class="score_2rg" >
+                    <li>SCore :</li>
+                    <li id="score_2rg">43600</li>
+                </ul>
+                <ul class="score_2re">
+                    <li>Your Name :</li>
+                    <li id="score_2re"><input type="text" value=""/></li>
+                </ul>
+                <button id="tijiao">SUBMIT</button>
+            </div>
+            <p class="logo">G O U T W</p>
+        </div>
+        <div class="top_02">
+            <div class="shoye_01" id="return-btn2">
+                <p class="ico1">&#x0150;</p>
+                <img src="./images/zp2.gif" class="tu_01" width="90" height="95" alt=""/>
+            </div>
+            <img src="./images/dd.gif" id="dead-restart" class="tu_02" width="120" height="125" alt=""/>
+        </div>
+
+
+    </div>
+ </div>
+<script type="text/javascript" src="js/hinder.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/operateGame.js"></script>
+
+</body>
+</html>

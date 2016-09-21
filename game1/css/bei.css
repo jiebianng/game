@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*控制显示界面中的哪个部分内容*/
+body .show{
+    display: block;
+}
+
+@font-face {font-family: 'iconfont';
+    src: url('../font/ux/iconfont.eot'); /* IE9*/
+    src: url('../font/ux/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/ux/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/ux/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/ux/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+.ico{
+    margin-left: 540px;
+    margin-top: -110px;
+    font-family:"iconfont";
+    font-size:40px;
+    font-style:normal;
+    color: #9cf;
+}
+.bei .ico{
+    cursor: pointer;
+}
+.bei{
+    display: none;
+    width: 800px;
+    height: 480px;
+    margin:50px auto;
+    border: 1px solid #ccc;
+}
+.bei>.fist{
+    width:800px;
+    height:120px;
+}
+.bei>.fist>img{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.bei>.two{
+    width: 800px;
+    height: 180px;
+}
+.bei>.two>.zi_you>img{
+    margin-top: 15px;
+}
+.bei>.three{
+    width: 800px;
+    height: 180px;
+}
+.bei>.three>img{
+    margin-left: 300px;
+    cursor: pointer;
+}
+.bei>.three>.wenzi{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 620px;
+    font-family: xia;
+}
+@font-face {
+    font-family: xia;
+    src: url(../font/xia.ttf);
+}
+
